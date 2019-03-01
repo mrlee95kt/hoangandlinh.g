@@ -1,0 +1,23 @@
+# Site settings
+title: "Phong + Hue"
+description: |
+    Yen The Town, Luc Yen, Yen Bai   
+     October 5, 2018
+    
+    Mong Cai City, Quang Ninh   
+    October 7, 2018
+    
+    Hanoi        
+    October 19, 2018
+    
+owner: Vi Ho Phong
+first_published: 2018
+email: vihophong@live.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "windandchip.info" # the base hostname & protocol for your site
+
+social:
+  github: https://github.com/phongandhue/weddingsite.git
+
+# Build settings
+markdown: kramdown

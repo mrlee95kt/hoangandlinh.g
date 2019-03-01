@@ -1,0 +1,44 @@
+---
+layout: landing
+---
+
+
+<section id="banner">
+  <div class="inner">
+    <h2>{{ site.title }}</h2>
+    <p>{{ site.description | markdownify }}</p>
+  </div>
+
+  <audio autoplay controls id="aud">
+  <!-- <audio autoplay> -->
+    <source src="anca.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <a href="#details" class="more scrolly">Details</a>
+  
+</section>
+
+<section id="details" class="wrapper style1 special">
+  {% include sections/details.html %}
+</section>
+
+<section id="couple" class="wrapper alt style2">
+{% include sections/couple.html %}
+</section>
+
+<section id="rsvp" class="wrapper style3 special" style="background-color: #fffafa">
+  {% include sections/rsvp.html %}
+</section>
+
+<section id="registry" class="wrapper style3 special">
+  {% include sections/honeyfund.html %}
+</section>
+
+<script type="text/javascript">
+  document.addEventListener('click', musicPlay);
+  function musicPlay() {
+  document.getElementById('aud').play();
+  document.removeEventListener('click', musicPlay);
+  }
+</script>
